@@ -1,0 +1,102 @@
+.hiring{
+  padding-top: clamp(40px, cqi(90), 90px);
+  padding-bottom: 100px;
+  &__row{
+    @media(min-width:992px){
+      display: flex;
+      justify-content: space-between;
+      align-items: flex-start;
+    }
+  }
+  &__left{
+    margin-bottom: 32px;
+    @media(min-width:992px){
+      margin-bottom: 0;
+      width: 47%;
+      padding-right: 100px;
+    }
+  }
+  &__right{
+    @media(min-width:992px){
+      width: 53%;
+    }
+  }
+  &__item{
+    border-bottom: 1px solid #D8D8C9;
+    position: relative;
+    cursor: pointer;
+    *{
+      pointer-events: none;
+    }
+    &__sub{
+      font-weight: 400;
+      font-size: 12px;
+      line-height: 15px;
+      text-transform: uppercase;
+      margin-bottom: 8px;
+    }
+    &__title{
+      margin-bottom: 16px;
+      font-family: 'Founders Grotesk', sans-serif;
+      font-weight: 400;
+      font-size: clamp(32px, cqi(40), 40px);
+      line-height: 100%;
+      text-transform: uppercase;
+      padding-right: 20px;
+    }
+    &__text{
+      font-weight: 400;
+      font-size: 16px;
+      line-height: 140%;
+      max-height: 0;
+      opacity: 0;
+      overflow: hidden;
+      transition: 1s ease;
+    }
+    &__link{
+      font-weight: 500;
+      font-size: 18px;
+      line-height: 110%;
+      text-align: center;
+      text-transform: uppercase;
+      display: flex;
+      text-decoration: none;
+      max-height: 0;
+      opacity: 0;
+      overflow: hidden;
+      transition: 1s ease;
+      svg{
+        margin-left: 2px;
+      }
+    }
+    &__btn{
+      position: absolute;
+      right: 0;
+      top: 20px;
+      transition: 1s ease;
+      background: none;
+      border: none;
+      padding: 0;
+    }
+    &:not(:first-child){
+      margin-top: 30px;
+    }
+    &:hover{
+      border-color: var(--text-color);
+    }
+    &.active{
+      padding-bottom: 18px;
+      .hiring__item__btn{
+        transform: rotate(90deg);
+      }
+      .hiring__item__text{
+        margin-bottom: 26px;
+      }
+      .hiring__item__text,
+      .hiring__item__link{
+        max-height: 1000px;
+        opacity: 1;
+      }
+    }
+  }
+}

@@ -1,0 +1,146 @@
+@import 'base/all';
+
+@import 'modules/tiny-slider';
+
+@import 'partials/header';
+@import 'partials/banner';
+@import 'partials/care';
+// @import 'partials/waiting';
+@import 'partials/footer';
+
+
+section{
+  position: relative;
+  &:after{
+    content:"";
+    background: url('../img/bg-line.png') repeat-y 0 0/2px auto;
+    position: absolute;
+    left: 50%; top: 0;
+    transform: translateX(-50%);
+    height: 100%;
+    width: 2px;
+    z-index: 1;
+  }
+  .container{
+    position: relative;
+    z-index: 2;
+  }
+}
+
+.insights{
+  padding-bottom: 100px;
+  &__cats{
+    margin-top: 50px;
+    margin-bottom: 48px;
+    border-bottom: 2px dashed #E7E7DE;
+    @media(min-width:768px){
+      display: flex;
+      justify-content: flex-start;
+    }
+    @media(max-width:767px){
+      text-align: center;
+    }
+  }
+  &__subcat{
+    background: none;
+    border: none;
+    font-weight: 400;
+    font-size: 24px;
+    line-height: 110%;
+    text-transform: uppercase;
+    color: #3A3E3D;
+    position: relative;
+    padding: 0 15px;
+    @media(max-width:767px){
+      padding: 5px 15px;
+      &:not(:first-child){
+        margin-top: 20px;
+      }
+    }
+    &:after{
+      content: "";
+      background: #9C9E99;
+      height: 3px;
+      width: 0;
+      opacity: 0;
+      position: absolute;
+      top: 100%;
+      left: 0;
+      transition: .5s ease;
+    }
+    &.active, &:hover{
+      &:after{
+        width: 100%;
+        opacity: 1;
+      }
+    }
+  }
+  &__list{
+    display: grid;
+    column-gap: 30px;
+    row-gap: 30px;
+    grid-template-columns: 1fr;
+    @media(min-width:768px){
+      grid-template-columns: 1fr 1fr;
+    }
+    @media(min-width:1200px){
+      grid-template-columns: 1fr 1fr 1fr;
+    }
+  }
+  &__post{
+    background: #FFFEF4;
+    border: 1.5px solid rgba(58, 62, 61, 0.6);
+    padding: clamp(20px, cqi(24), 24px);
+    text-decoration: none;
+    transition: background .5s ease;
+    *{
+      pointer-events: none;
+    }
+    &:hover{
+      background: #EFF4E6;
+    }
+  }
+  &__info{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    margin-top: 10px;
+    margin-bottom: 15px;
+  }
+  &__cat{
+    font-weight: 400;
+    font-size: 12px;
+    line-height: 15px;
+    text-transform: uppercase;
+    padding: 8px 12px;
+    border: 1px solid #3A3E3D;
+  }
+  &__date{
+    font-weight: 400;
+    font-size: 12px;
+    line-height: 15px;
+    text-transform: uppercase;
+  }
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+

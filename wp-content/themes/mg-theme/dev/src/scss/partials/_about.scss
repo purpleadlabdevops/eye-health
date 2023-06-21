@@ -1,0 +1,75 @@
+.about-us{
+  padding-top: 50px;
+  padding-bottom: 120px;
+  @media(min-width:992px){
+    padding-top: 90px;
+    padding-bottom: 202px;
+  }
+  &:before{
+    content:"";
+    background: url('../img/bg-lines.png') no-repeat center bottom;
+    position: absolute;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    height: 100%;
+    z-index: 1;
+  }
+  .container{
+    @media(min-width:992px){
+      display: flex;
+      justify-content: space-between;
+    }
+  }
+  &__info, &__list{
+    @media(min-width:992px){
+      width: 50%;
+    }
+  }
+  &__info{
+    @media(max-width:991px){
+      margin-bottom: 40px;
+    }
+    @media(min-width:992px){
+      padding-right: 65px;
+      padding-top: 16px;
+    }
+    h2{
+      margin-bottom: 16px;
+    }
+    p{
+      margin-bottom: 30px;
+    }
+  }
+  &__list{
+    @media(min-width:992px){
+      padding-left: 38px;
+    }
+  }
+  &__item{
+    position: relative;
+    padding-left: 94px;
+    padding-top: 5px;
+    background: var(--bg-color);
+    @media(min-width:992px){
+      padding-left: 124px;
+    }
+    &:not(:first-child){
+      margin-top: 49px;
+    }
+    img{
+      position: absolute;
+      left: 0;
+      top: 0;
+      width: 70px;
+      height: auto;
+      @media(min-width:992px){
+        width: 100px;
+      }
+    }
+    h6{
+      margin-bottom: 12px;
+      letter-spacing: 1px;
+    }
+  }
+}

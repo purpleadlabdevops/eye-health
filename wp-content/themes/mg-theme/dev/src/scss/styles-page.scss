@@ -1,0 +1,18 @@
+@import 'base/all';
+
+@import 'partials/header';
+@import 'partials/footer';
+
+.page{
+  padding-top: 125px;
+  &__section{
+    padding-bottom: 125px;
+  }
+  &__title{}
+  &__content{
+    .txt-28{
+      margin-top: 32px;
+      margin-bottom: 10px;
+    }
+  }
+}

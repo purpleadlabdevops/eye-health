@@ -1,0 +1,66 @@
+.insurance{
+  text-align: center;
+  padding-top: 80px;
+  position: relative;
+  z-index: 1;
+  background: url('../img/insurance-lines.png') no-repeat center bottom;
+  padding-bottom: 100px;
+  @media(min-width:768px){
+    padding-top: 110px;
+    padding-bottom: 128px;
+  }
+  &__head{
+    padding-top: 7px;
+    padding-bottom: 6px;
+    background: var(--bg-color);
+  }
+  h2{
+    margin-bottom: 15px;
+  }
+  p{
+    max-width: 768px;
+    margin-left: auto;
+    margin-right: auto;
+  }
+  &__row{
+    display: flex;
+    &-1{
+      justify-content: space-between;
+    }
+    &-2{
+      justify-content: space-around;
+    }
+    &-3{
+      justify-content: center;
+    }
+    img{
+      @media(max-width:991px){
+        max-width: 100px;
+        height: auto;
+      }
+    }
+  }
+  .btn{
+    display: inline-block;
+    margin-top: 45px;
+    @media(min-width:768px){
+      margin-top: 75px;
+    }
+  }
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+

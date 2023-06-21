@@ -1,0 +1,203 @@
+@import 'base/all';
+
+@import 'modules/tiny-slider';
+
+@import 'partials/header';
+@import 'partials/banner';
+@import 'partials/footer';
+@import 'partials/insights';
+@import 'partials/form';
+@import 'partials/hiring';
+
+.doctor{
+  padding-top: 80px;
+  padding-bottom: clamp(80px, cqi(220), 220px);
+  &__item{
+    padding: 24px;
+    background: #D7E0D5;
+    @media(min-width:992px){
+      display: flex;
+      justify-content: space-between;
+      align-items: flex-start;
+    }
+    &:not(:first-child){
+      margin-top: 32px;
+    }
+  }
+  &__img{
+    display: block;
+    height: auto;
+    width: 100%;
+    max-width: 300px;
+    margin-left: auto;
+    margin-right: auto;
+    margin-bottom: 20px;
+    @media(min-width:992px){
+      max-width: 100%;
+      width: 25%;
+      margin-bottom: 0;
+    }
+    @media(min-width:1200px){
+      width: 25%;
+    }
+  }
+  &__info{
+    @media(min-width:992px){
+      padding-left: 40px;
+      width: 75%;
+    }
+    @media(min-width:1200px){
+      width: 75%;
+    }
+    &__header{
+      @media(min-width:768px){
+        display: flex;
+        justify-content: space-between;
+      }
+    }
+    &__right{
+      font-weight: 400;
+      font-size: 12px;
+      line-height: 15px;
+      text-transform: uppercase;
+      span{
+        font-weight: 500;
+      }
+    }
+  }
+  &__directions{
+    display: flex;
+    flex-wrap: wrap;
+    margin-top: 15px;
+    margin-bottom: 20px;
+    &__item{
+      font-weight: 400;
+      font-size: 12px;
+      line-height: 15px;
+      text-transform: uppercase;
+      padding: 8px 12px;
+      height: 31px;
+      background: #EEEEE0;
+      border: 1px solid #3A3E3D;
+      font-weight: 400;
+      font-size: 12px;
+      line-height: 15px;
+      text-transform: uppercase;
+      @media(max-width:767px){
+        margin-bottom: 10px;
+        margin-left: 0;
+        margin-right: 10px;
+      }
+      @media(min-width:768px){
+        &:not(:first-child){
+          margin-left: 20px;
+        }
+      }
+    }
+  }
+  &__about{
+    font-weight: 400;
+    font-size: 16px;
+    line-height: 1.4;
+    margin-bottom: 16px;
+  }
+  &__thoughts{
+    font-weight: 500;
+    font-size: 16px;
+    line-height: 1.4;
+    margin-bottom: 16px;
+  }
+  &__reviews{
+    max-height: 0px;
+    overflow: hidden;
+    opacity: 0;
+    transition: 1s ease-in-out;
+    &.active{
+      opacity: 1;
+      max-height: 475px;
+      overflow-y: auto;
+    }
+    &__item{
+      padding: 12px;
+      background: #FFFEF4;
+      border: 1px solid #3A3E3D;
+      &:not(:first-child){
+        margin-top: 20px;
+      }
+    }
+    &__head{
+      display: flex;
+      justify-content: space-between;
+      align-items: center;
+      margin-bottom: 8px;
+    }
+    &__name{
+      font-weight: 400;
+      font-size: 20px;
+      line-height: 1.4;
+    }
+    &__date{
+      font-weight: 400;
+      font-size: 12px;
+      line-height: 15px;
+      text-transform: uppercase;
+      color: #404040;
+    }
+    &__title{
+      font-weight: 500;
+      font-size: 16px;
+      line-height: 1.4;
+      margin-bottom: 8px;
+    }
+    &__message{
+      font-weight: 400;
+      font-size: 16px;
+      line-height: 1.4;
+    }
+    &__panel{
+      margin-bottom: 22px;
+      @media(min-width:768px){
+        display: flex;
+        justify-content: space-between;
+      }
+      a{
+        font-weight: 500;
+        font-size: 18px;
+        line-height: 1.1;
+        text-transform: uppercase;
+        text-decoration: none;
+        svg{
+          margin-left: 9px;
+        }
+        @media(max-width:767px){
+          display: none;
+        }
+      }
+    }
+    &__count{
+      font-weight: 500;
+      font-size: 18px;
+      line-height: 1.1;
+      text-transform: uppercase;
+      display: flex;
+      align-items: center;
+      svg{
+        margin-left: 9px;
+        pointer-events: none;
+        transition: .5s ease;
+      }
+      &:before{
+        content: "see";
+        margin-right: 5px;
+      }
+      &.active{
+        &:before{
+          content: "collapse";
+        }
+        svg{
+          transform: rotate(180deg);
+        }
+      }
+    }
+  }
+}

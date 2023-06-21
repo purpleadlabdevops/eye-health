@@ -1,0 +1,106 @@
+.banner{
+  color: var(--text-color);
+  text-align: center;
+  overflow: hidden;
+  position: relative;
+  padding-bottom: clamp(35px, cqi(70), 70px);
+  @media(min-width:768px){
+    color: var(--bg-color);
+    padding-top: clamp(100px, cqi(260), 260px);
+    padding-bottom: clamp(20px, cqi(65), 65px);
+  }
+  &:before{
+    content:"";
+    background: url('../img/banner-lines.png') no-repeat center bottom;
+    position: absolute;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    height: 100%;
+    z-index: 1;
+    @media(min-width:768px){
+      bottom: clamp(30px, cqi(100), 100px);
+    }
+  }
+  &__video{
+    width: 100%;
+    height: auto;
+    z-index: 2;
+    position: relative;
+    @media(min-width:768px){
+      position: absolute;
+      left: 0; top: 0;
+      z-index: 1;
+    }
+  }
+  &__wrap{
+    @media(max-width:767px){
+      display: none;
+    }
+    @media(min-width:768px){
+      position: absolute;
+      left: 0; bottom: -1px;
+      z-index: 2;
+      width: 100%;
+      height: auto;
+    }
+  }
+  .container{
+    position: relative;
+    z-index: 3;
+    @media(max-width:767px){
+      padding-top: 46px;
+    }
+  }
+  &__bg{
+    background: #f9f2ac;
+    opacity: .3;
+    position: absolute;
+    left: 0; right: 0;
+    top: 0; bottom: 0;
+    z-index: 2;
+    width: 100%;
+  }
+  h1{
+    margin-bottom: clamp(16px, cqi(24), 24px);
+  }
+  p{
+    margin-bottom: 72px;
+    width: 800px;
+    margin-left: auto;
+    margin-right: auto;
+    max-width: 100%;
+    @media(max-width:767px){
+      margin-bottom: 32px;
+      br{
+        display: none;
+      }
+    }
+  }
+  .btn{
+    @media(max-width:767px){
+      background: var(--text-color);
+      color: var(--bg-color);
+    }
+  }
+  &__mod{
+    padding-top: clamp(196px, cqi(410), 410px);
+    .banner__bg{
+      background: none;
+      opacity: 1;
+    }
+    .btn{
+      display: none;
+    }
+  }
+  &__var{
+    padding-bottom: clamp(35px, cqi(148), 148px);
+    @media(max-width:767px){
+      padding-top: 196px;
+    }
+    .banner__bg{
+      background: none;
+      opacity: 1;
+    }
+  }
+}
