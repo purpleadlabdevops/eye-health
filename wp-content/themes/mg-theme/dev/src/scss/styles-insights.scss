@@ -88,8 +88,8 @@ section{
     }
   }
   &__post{
-    background: #FFFEF4;
-    border: 1.5px solid rgba(58, 62, 61, 0.6);
+    background: var(--bg-color);
+    border: 1.5px solid rgba(var(--text-color-rgb), 0.6);
     padding: clamp(20px, cqi(24), 24px);
     text-decoration: none;
     transition: background .5s ease;
@@ -97,7 +97,7 @@ section{
       pointer-events: none;
     }
     &:hover{
-      background: #EFF4E6;
+      background: var(--loc-bg-active);
     }
   }
   &__info{

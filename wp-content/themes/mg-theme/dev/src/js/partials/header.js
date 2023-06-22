@@ -30,4 +30,15 @@
     }
   })
 
+  const changeStyle = document.querySelector('.change-style')
+  changeStyle.addEventListener('click', e => {
+    e.preventDefault();
+    globalStyle.innerHTML = e.target.dataset.style === 'default' ? styleDark : styleDefault
+    e.target.dataset.style = e.target.dataset.style === 'default' ? 'dark' : 'default'
+    localStorage.setItem('localStyle', e.target.dataset.style)
+  })
+  if( localStorage.getItem('localStyle') ){
+    changeStyle.dataset.style = localStorage.getItem('localStyle') === 'default' ? 'default' : 'dark'
+  }
+
 })();

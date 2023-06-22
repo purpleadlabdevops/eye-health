@@ -5,7 +5,7 @@
   position: relative;
   padding-bottom: clamp(35px, cqi(70), 70px);
   @media(min-width:768px){
-    color: var(--bg-color);
+    color: #FFFEF4;
     padding-top: clamp(100px, cqi(260), 260px);
     padding-bottom: clamp(20px, cqi(65), 65px);
   }
@@ -53,7 +53,6 @@
     }
   }
   &__bg{
-    background: #f9f2ac;
     opacity: .3;
     position: absolute;
     left: 0; right: 0;
@@ -78,6 +77,9 @@
     }
   }
   .btn{
+    background-color: #FFFEF4;
+    border-color: #FFFEF4;
+    color: #221B19;
     @media(max-width:767px){
       background: var(--text-color);
       color: var(--bg-color);

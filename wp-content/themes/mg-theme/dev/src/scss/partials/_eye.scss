@@ -1,0 +1,56 @@
+.eye{
+  position: fixed;
+  left: 0; top: 0;
+  width: 100%;
+  height: 100vh;
+  z-index: 999;
+  &__top, &__bot{
+    background: #221B19;
+    position: absolute;
+    display: block;
+    height: 50vh;
+    left: 0; right: 0;
+    transition: transform 2s ease;
+    svg{
+      position: absolute;
+      left: 0;
+      width: 100%;
+      display: block;
+      height: auto;
+    }
+  }
+  &__top{
+    top: 0;
+    svg{
+      top: 100%;
+    }
+  }
+  &__bot{
+    bottom: 0;
+    svg{
+      bottom: 100%;
+    }
+  }
+  &__opening{
+    .eye{
+      &__top{
+        transform: translateY(-200%);
+      }
+      &__bot{
+        transform: translateY(200%);
+      }
+    }
+  }
+  &__opened{
+    visibility: hidden;
+    opacity: 0;
+    .eye{
+      &__top{
+        transform: translateY(-200%);
+      }
+      &__bot{
+        transform: translateY(200%);
+      }
+    }
+  }
+}

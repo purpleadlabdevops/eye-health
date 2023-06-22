@@ -5,13 +5,11 @@
 get_header(); ?>
 
 <section class="banner">
-  <video class="banner__video" width="400" height="300" autoplay muted loop poster="<?php echo IMG; ?>/video-poster.jpg">
-    <source src="<?php echo VIDEO; ?>/pexels.mp4" type='video/mp4; codecs="avc1.42E01E, mp4a.40.2"'>
-  </video>
+  <img class="banner__bg" src="<?php the_field('banner_img'); ?>" alt="<?php the_field('banner_title'); ?>">
   <div class="container">
     <h1><?php the_field('banner_title'); ?></h1>
     <p class="txt-20 txt-uppercase"><?php the_field('banner_text'); ?></p>
-    <a class="btn btn-white btn-lg txt-18 txt-uppercase" href="#">Book an appointment</a>
+    <a class="btn btn-white btn-lg txt-18 txt-uppercase book-an-appointment" href="<?php the_field('book_an_appointment', 'option'); ?>">Book an appointment</a>
   </div>
 </section>
 

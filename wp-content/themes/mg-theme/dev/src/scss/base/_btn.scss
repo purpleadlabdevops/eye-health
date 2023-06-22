@@ -29,6 +29,14 @@
       text-shadow: 0.5px 0.5px 0.5px var(--text-color);
     }
   }
+  &-white-static{
+    border: 1px solid #FFFEF4;
+    background: #FFFEF4;
+    color: #221B19;
+    &:hover{
+      text-shadow: 0.5px 0.5px 0.5px #221B19;
+    }
+  }
   &-lg{
     padding-left: 50px;
     padding-right: 50px;

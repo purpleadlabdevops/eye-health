@@ -1,8 +1,11 @@
 <header class="main-header">
 	<div class="container">
-		<a class="main-header__logo link-page" href="<?php echo home_url(); ?>">
-			<?php the_field('header_logo', 'option'); ?>
-		</a>
+		<div class="main-header__left">
+			<a class="main-header__logo link-page" href="<?php echo home_url(); ?>">
+				<?php the_field('header_logo', 'option'); ?>
+			</a>
+			<button class="change-style" data-style="default">Change style</button>
+		</div>
 		<button class="main-header__btn">
 			<span></span>
 			<span></span>
@@ -16,7 +19,7 @@
 				<?php endwhile; ?>
 			<?php endif; ?>
 			<a class="btn btn-light" href="#">Payment</a>
-			<a class="btn btn-dark" href="#">Book an appointment</a>
+			<a class="btn btn-dark book-an-appointment" href="<?php the_field('book_an_appointment', 'option'); ?>">Book an appointment</a>
 		</nav>
 	</div>
 </header>

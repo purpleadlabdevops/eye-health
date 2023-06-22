@@ -13,7 +13,7 @@ var tns=function(){Object.keys||(Object.keys=function(t){var e=[];for(var n in t
         },
         eyeClose = url => {
           eye.classList.remove('eye__opened')
-          setTimeout(() => location.href = url, 1000)
+          setTimeout(() => location.href = url+window.location.search, 1000)
         }
 
   setTimeout(() => eyeOpening(), 100)
@@ -22,6 +22,14 @@ var tns=function(){Object.keys||(Object.keys=function(t){var e=[];for(var n in t
       e.preventDefault()
       eyeClose(e.target.href)
     })
+  })
+
+})();
+(function(){
+
+  const bookAnAppointment = document.querySelectorAll('.book-an-appointment')
+  bookAnAppointment.forEach(el => {
+    el.href = el.href+window.location.search
   })
 
 })();

@@ -1,6 +1,6 @@
 <footer id="main-footer" class="main-footer">
   <svg class="main-footer__img" width="1440" height="115" viewBox="0 0 1440 115" fill="none" xmlns="http://www.w3.org/2000/svg">
-    <path d="M1677 -93C1075.82 184.105 364.184 184.105 -237 -92.9999L-237 115L1677 115L1677 -92.9598L1677 -93Z" fill="#3A3E3D"/>
+    <path d="M1677 -93C1075.82 184.105 364.184 184.105 -237 -92.9999L-237 115L1677 115L1677 -92.9598L1677 -93Z" fill="var(--footer-bg)"/>
   </svg>
   <div class="main-footer__wrap">
     <div class="container">

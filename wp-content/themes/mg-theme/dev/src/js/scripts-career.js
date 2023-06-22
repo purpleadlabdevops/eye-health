@@ -1,6 +1,7 @@
 //= partials/header.js
 //= partials/ajaxRequest.js
 //= partials/eye.js
+//= partials/bookAnAppointment.js
 
 (function(){
 

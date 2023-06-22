@@ -2,7 +2,6 @@
 
 var
   gulp = require('gulp'),
-  // sass = require('gulp-sass'),
   sass = require('gulp-sass')(require('sass')),
   imagemin = require('gulp-imagemin'),
   pngquant = require('imagemin-pngquant'),
@@ -18,7 +17,7 @@ sass.compiler = require('node-sass');
 
 gulp.task('sass', function () {
   return gulp.src('src/scss/**/*.scss')
-    .pipe(sass.sync({outputStyle: 'uncompressed'})
+    .pipe(sass.sync({outputStyle: 'compressed'})
     .on('error', sass.logError))
     .pipe(gulp.dest('../css'))
     .pipe(browserSync.stream());

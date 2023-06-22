@@ -8,11 +8,11 @@ get_header(); ?>
   <video class="banner__video" width="400" height="300" autoplay muted loop poster="<?php echo IMG; ?>/video-poster.jpg">
     <source src="<?php echo VIDEO; ?>/pexels.mp4" type='video/mp4; codecs="avc1.42E01E, mp4a.40.2"'>
   </video>
-  <svg class="banner__wrap" width="1440" height="187" viewBox="0 0 1440 187" fill="none" xmlns="http://www.w3.org/2000/svg"><path d="M1440 0.498274C981.5 240.998 450.414 242.193 -8.13048e-06 0.498337L0.00121943 186.5L1440 186.502L1440 0.538008L1440 0.498274Z" fill="#FFFEF4"/></svg>
+  <svg class="banner__wrap" width="1440" height="187" viewBox="0 0 1440 187" fill="none" xmlns="http://www.w3.org/2000/svg"><path d="M1440 0.498274C981.5 240.998 450.414 242.193 -8.13048e-06 0.498337L0.00121943 186.5L1440 186.502L1440 0.538008L1440 0.498274Z" fill="var(--bg-color)"/></svg>
   <div class="container">
     <h1><?php the_field('banner_title'); ?></h1>
     <p class="txt-20 txt-uppercase"><?php the_field('banner_text'); ?></p>
-    <a class="btn btn-white btn-lg txt-18 txt-uppercase" href="#">Book an appointment</a>
+    <a class="btn btn-white btn-lg txt-18 txt-uppercase book-an-appointment" href="<?php the_field('book_an_appointment', 'option'); ?>">Book an appointment</a>
   </div>
 </section>
 
@@ -22,19 +22,8 @@ get_header(); ?>
       <h2><?php the_field('insurance_title'); ?></h2>
       <p class="txt-20"><?php the_field('insurance_text'); ?></p>
     </div>
-    <?php $insurance = get_field('insurance_images'); ?>
-    <div class="insurance__row insurance__row-1">
-      <img class="insurance__img" src="<?php echo $insurance[0]; ?>" />
-      <img class="insurance__img" src="<?php echo $insurance[4]; ?>" />
-    </div>
-    <div class="insurance__row insurance__row-2">
-      <img class="insurance__img" src="<?php echo $insurance[1]; ?>" />
-      <img class="insurance__img" src="<?php echo $insurance[3]; ?>" />
-    </div>
-    <div class="insurance__row insurance__row-3">
-      <img class="insurance__img" src="<?php echo $insurance[2]; ?>" />
-    </div>
-    <a class="btn btn-dark btn-lg txt-18 txt-uppercase" href="#">Book an appointment</a>
+    <?php the_field('insurance_sponsors'); ?>
+    <a class="btn btn-dark btn-lg txt-18 txt-uppercase book-an-appointment" href="<?php the_field('book_an_appointment', 'option'); ?>">Book an appointment</a>
   </div>
 </section>
 

@@ -1,7 +1,7 @@
-$first: #F7F7F2;
-$second: #F7F7ED;
-$third: #EEEEE0;
-$center: #E0E0CE;
+$first: var(--doc-first);
+$second: var(--doc-second);
+$third: var(--doc-third);
+$center: var(--doc-center);
 .professionals{
   text-align: center;
   padding-top: 80px;

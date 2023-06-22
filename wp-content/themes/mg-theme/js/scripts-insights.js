@@ -30,6 +30,17 @@
     }
   })
 
+  const changeStyle = document.querySelector('.change-style')
+  changeStyle.addEventListener('click', e => {
+    e.preventDefault();
+    globalStyle.innerHTML = e.target.dataset.style === 'default' ? styleDark : styleDefault
+    e.target.dataset.style = e.target.dataset.style === 'default' ? 'dark' : 'default'
+    localStorage.setItem('localStyle', e.target.dataset.style)
+  })
+  if( localStorage.getItem('localStyle') ){
+    changeStyle.dataset.style = localStorage.getItem('localStyle') === 'default' ? 'default' : 'dark'
+  }
+
 })();
 (function(){
 
@@ -45,7 +56,7 @@
         },
         eyeClose = url => {
           eye.classList.remove('eye__opened')
-          setTimeout(() => location.href = url, 1000)
+          setTimeout(() => location.href = url+window.location.search, 1000)
         }
 
   setTimeout(() => eyeOpening(), 100)
@@ -54,6 +65,14 @@
       e.preventDefault()
       eyeClose(e.target.href)
     })
+  })
+
+})();
+(function(){
+
+  const bookAnAppointment = document.querySelectorAll('.book-an-appointment')
+  bookAnAppointment.forEach(el => {
+    el.href = el.href+window.location.search
   })
 
 })();

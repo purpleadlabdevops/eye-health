@@ -20,25 +20,10 @@
 			let vh = window.innerHeight * 0.01;
 			document.documentElement.style.setProperty('--vh', `${vh}px`);
 		</script>
-		<?php if(get_the_ID()): ?>
-		<script>
-			let pageID = <?php echo get_the_ID(); ?>;
-		</script>
-		<?php endif; ?>
-		<style>
-			<?php if(isset($_GET['style']) && $_GET['style'] == 'dark'): ?>
-				:root{
-					--text-color: #FFFEF4;
-					--bg-color: #3A3E3D;
-				}
-			<?php else: ?>
-				:root{
-					--text-color: #221B19;
-					--bg-color: #FFFEF4;
-				}
-			<?php endif; ?>
-		</style>
+		<?php get_template_part( 'partials/block', 'styler' ); ?>
 		<?php wp_head(); ?>
+		<?php the_field('head_scripts', 'option'); ?>
 	</head>
 	<body <?php body_class(); ?> >
+		<?php get_template_part( 'partials/block', 'eye' ); ?>
 		<?php get_template_part( 'partials/block', 'header' ); ?>

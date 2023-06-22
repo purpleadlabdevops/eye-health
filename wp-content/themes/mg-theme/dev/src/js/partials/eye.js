@@ -12,7 +12,7 @@
         },
         eyeClose = url => {
           eye.classList.remove('eye__opened')
-          setTimeout(() => location.href = url, 1000)
+          setTimeout(() => location.href = url+window.location.search, 1000)
         }
 
   setTimeout(() => eyeOpening(), 100)

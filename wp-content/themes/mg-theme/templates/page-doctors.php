@@ -9,7 +9,7 @@ get_header(); ?>
   <div class="container">
     <h1><?php the_field('banner_title'); ?></h1>
     <p class="txt-20 txt-uppercase"><?php the_field('banner_text'); ?></p>
-    <a class="btn btn-white btn-lg txt-18 txt-uppercase" href="#">Book an appointment</a>
+    <a class="btn btn-white btn-lg txt-18 txt-uppercase book-an-appointment" href="<?php the_field('book_an_appointment', 'option'); ?>">Book an appointment</a>
   </div>
 </section>
 
@@ -47,7 +47,7 @@ get_header(); ?>
             <?php echo $countReviews; ?> review<?php if($countReviews > 1){echo 's';} ?>
             <svg width="16" height="10" viewBox="0 0 16 10" fill="none" xmlns="http://www.w3.org/2000/svg"><path d="M1 1.6665L8 8.33317L15 1.6665" stroke="#221B19" stroke-width="2"/></svg>
           </div>
-          <a href="#">
+          <a href="<?php the_field('book_an_appointment', 'option'); ?>" class="book-an-appointment">
             book an appointment
             <svg width="15" height="12" viewBox="0 0 15 12" fill="none" xmlns="http://www.w3.org/2000/svg"><path d="M6.32598 2.43509L6.835 0.53541L13.9991 2.45503L14.6945 3.65938L12.7748 10.8235L10.8752 10.3145L12.1803 5.44348L1.17839 11.7955L0.195044 10.0923L11.197 3.74027L6.32598 2.43509Z" fill="#221B19"/></svg>
           </a>

@@ -5,7 +5,7 @@
     height: auto;
   }
   &__wrap{
-    background: #3A3E3D;
+    background: var(--footer-bg);
     padding-top: 50px;
     @media(min-width:992px){
       padding-top: 82px;
@@ -16,7 +16,7 @@
     font-size: 26px;
     line-height: 110%;
     text-transform: uppercase;
-    color: var(--bg-color);
+    color: var(--footer-title-color);
     margin-bottom: 10px;
     @media(min-width:768px){
       margin-bottom: 24px;
@@ -116,53 +116,6 @@
 .single .main-footer__img,
 .error404 .main-footer__img{
   display: none;
-}
-
-.eye{
-  position: fixed;
-  left: 0; top: 0;
-  right: 0; bottom: 0;
-  z-index: 999;
-  &__top, &__bot{
-    position: absolute;
-    display: block;
-    width: 120%;
-    height: auto;
-    left: -10%;
-    transform: translateY(0);
-    transition: 1s ease-in-out;
-  }
-  &__top{
-    top: 0;
-  }
-  &__bot{
-    bottom: 0;
-  }
-  &__opening{
-    .eye{
-      &__top, &__bot{
-        transition: 1s ease-in-out;
-      }
-      &__top{
-        transform: translateY(-100%);
-      }
-      &__bot{
-        transform: translateY(100%);
-      }
-    }
-  }
-  &__opened{
-    visibility: hidden;
-    opacity: 0;
-    .eye{
-      &__top{
-        transform: translateY(-100%);
-      }
-      &__bot{
-        transform: translateY(100%);
-      }
-    }
-  }
 }
 
 .link-page{

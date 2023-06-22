@@ -13,7 +13,7 @@
   }
   &__item{
     padding: 24px;
-    background: var(--bg-color);
+    background: var(--loc-bg);
     border: 2px solid rgba(58, 62, 61, 0.5);;
     border-radius: 1px;
     transition: 1s ease;
@@ -21,7 +21,7 @@
       margin-top: 40px;
     }
     &.active{
-      background: linear-gradient(0deg, rgba(193, 215, 187, 0.25), rgba(193, 215, 187, 0.25)), #FFFEF4;
+      background: var(--loc-bg-active);
       border: 2px solid #3A3E3D;
     }
   }
@@ -34,10 +34,10 @@
     pointer-events: none;
     font-weight: 400;
   }
-  .btn{
-    width: 100%;
-    text-align: center;
-  }
+  // .btn{
+  //   width: 100%;
+  //   text-align: center;
+  // }
   &__row{
     @media(min-width:992px){
       display: flex;
@@ -70,5 +70,8 @@
     &.active{
       fill: #C1D7BB;
     }
+  }
+  .word{
+    fill: var(--text-color);
   }
 }

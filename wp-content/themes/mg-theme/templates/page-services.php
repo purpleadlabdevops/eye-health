@@ -9,7 +9,7 @@ get_header(); ?>
   <div class="container">
     <h1><?php the_field('banner_title'); ?></h1>
     <p class="txt-20 txt-uppercase"><?php the_field('banner_text'); ?></p>
-    <a class="btn btn-white btn-lg txt-18 txt-uppercase" href="#">Book an appointment</a>
+    <a class="btn btn-white btn-lg txt-18 txt-uppercase book-an-appointment" href="<?php the_field('book_an_appointment', 'option'); ?>">Book an appointment</a>
   </div>
 </section>
 
@@ -20,7 +20,7 @@ get_header(); ?>
       <img src="<?php the_field('approach_img'); ?>">
       <div class="approach__info">
         <p class="txt-20"><?php the_field('approach_text'); ?></p>
-        <a class="btn btn-dark btn-lg txt-18 txt-uppercase" href="#">Book an appointment</a>
+        <a class="btn btn-dark btn-lg txt-18 txt-uppercase book-an-appointment" href="<?php the_field('book_an_appointment', 'option'); ?>">Book an appointment</a>
       </div>
     </div>
     <?php if( have_rows('approach_list') ): ?>
@@ -52,7 +52,7 @@ get_header(); ?>
           <img src="<?php the_sub_field('img'); ?>">
           <?php endif; ?>
           <p class="txt-20"><?php the_sub_field('text'); ?></p>
-          <a class="btn btn-dark btn-lg txt-18 txt-uppercase" href="#">Book an appointment</a>
+          <a class="btn btn-dark btn-lg txt-18 txt-uppercase book-an-appointment" href="<?php the_field('book_an_appointment', 'option'); ?>">Book an appointment</a>
         </div>
         <?php endwhile; ?>
       </div>

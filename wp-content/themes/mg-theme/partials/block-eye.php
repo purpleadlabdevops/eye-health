@@ -1,8 +1,8 @@
 <div class="eye">
-  <svg class="eye__top" width="968" height="511" viewBox="0 0 968 511" fill="none" xmlns="http://www.w3.org/2000/svg">
-    <path d="M1082.99 510.427C706.572 199.581 261 199.581 -115.418 510.427L-115.418 -54.7788L1082.99 -54.7788L1082.99 510.381L1082.99 510.427Z" fill="#221B19"/>
-  </svg>
-  <svg class="eye__bot" width="968" height="580" viewBox="0 0 968 580" fill="none" xmlns="http://www.w3.org/2000/svg">
-    <path d="M1082.99 -24.6921C706.572 339.5 261 339.5 -115.418 -24.6921L-115.418 637.513L1082.99 637.513L1082.99 -24.6392L1082.99 -24.6921Z" fill="#221B19"/>
-  </svg>
+  <div class="eye__top">
+    <svg width="1440" height="208" viewBox="0 0 1440 208" fill="none" xmlns="http://www.w3.org/2000/svg"><path d="M0 208C452.302 -69.1046 987.698 -69.1046 1440 208L1440 6.29444e-05L0 0V207.959V208Z" fill="#221B19"/></svg>
+  </div>
+  <div class="eye__bot">
+    <svg width="1440" height="208" viewBox="0 0 1440 208" fill="none" xmlns="http://www.w3.org/2000/svg"><path d="M1440 0.000305176C987.698 277.105 452.302 277.105 0 0.000305176L0 208L1440 208V0.0405273V0.000305176Z" fill="#221B19"/></svg>
+  </div>
 </div>

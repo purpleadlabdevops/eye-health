@@ -10,7 +10,7 @@
               <div class="waiting__item" data-state="<?php echo $value; ?>">
                 <h5><?php the_sub_field('title'); ?></h5>
                 <p class="txt-16"><?php the_sub_field('text'); ?></p>
-                <a class="btn btn-dark btn-lg txt-18" href="#">BOOK AN APPOINTMENT</a>
+                <a class="btn btn-dark txt-18 book-an-appointment" href="<?php the_field('book_an_appointment', 'option'); ?>">BOOK AN APPOINTMENT</a>
               </div>
             <?php endwhile; ?>
           <?php endif; ?>

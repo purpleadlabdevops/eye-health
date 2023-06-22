@@ -1,5 +1,5 @@
 		<?php get_template_part( 'partials/block', 'footer' ); ?>
-		<?php get_template_part( 'partials/block', 'eye' ); ?>
 		<?php wp_footer(); ?>
+		<?php the_field('footer_scripts', 'option'); ?>
 	</body>
 </html>

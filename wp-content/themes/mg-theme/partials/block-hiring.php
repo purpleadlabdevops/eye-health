@@ -21,9 +21,9 @@
           <div class="hiring__item__text"><?php the_field('text'); ?></div>
           <a class="hiring__item__link" href="<?php the_field('link'); ?>">
             <?php the_field('link_text'); ?>
-            <svg width="24" height="24" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg"><path d="M11.6073 8.5182L11.9955 7.06931L17.4596 8.53341L17.9899 9.45197L16.5258 14.9161L15.0769 14.5278L16.0724 10.8127L7.68118 15.6574L6.93118 14.3583L15.3224 9.51366L11.6073 8.5182Z" fill="#221B19"/></svg>
+            <svg width="24" height="24" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg"><path d="M11.6073 8.5182L11.9955 7.06931L17.4596 8.53341L17.9899 9.45197L16.5258 14.9161L15.0769 14.5278L16.0724 10.8127L7.68118 15.6574L6.93118 14.3583L15.3224 9.51366L11.6073 8.5182Z" fill="var(--text-color)"/></svg>
           </a>
-          <button class="hiring__item__btn"><svg width="24" height="24" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg"><path d="M1.5 7L12 17L22.5 7" stroke="#221B19" stroke-width="2"/></svg></button>
+          <button class="hiring__item__btn"><svg width="24" height="24" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg"><path d="M1.5 7L12 17L22.5 7" stroke="var(--text-color)" stroke-width="2"/></svg></button>
         </div>
         <?php endwhile; ?>
       </div>
