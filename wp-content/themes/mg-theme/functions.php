@@ -12,7 +12,7 @@ add_action( 'wp_enqueue_scripts', 'replace_core_jquery_version' );
 
 add_theme_support( 'post-thumbnails' );
 
-// include('include/clear.php');
+include('include/clear.php');
 
 include('include/cpt_doctors.php');
 include('include/cpt_hiring.php');
