@@ -17,20 +17,18 @@
     document.querySelector('.main-header__nav').classList.toggle('active')
   })
 
-  setTimeout(()=>{
-    const headerLinks = document.querySelectorAll('.main-header__nav a'),
-          location = window.location.href,
-          slug = url => {
-            const linksArr = new URL(url).pathname.match(/[^\/]+/g)
-            return linksArr[linksArr.length - 1]
-          }
+  const headerLinks = document.querySelectorAll('.main-header__nav a'),
+        location = window.location.href,
+        slug = url => {
+          const linksArr = new URL(url).pathname.match(/[^\/]+/g)
+          return linksArr ? linksArr[0] : ''
+        }
 
-    headerLinks.forEach(link => {
-      if( slug(link.href) === slug(location) ){
-        link.classList.add('current')
-      }
-    })
-  }, 50);
+  headerLinks.forEach(link => {
+    if( slug(link.href) === slug(location) ){
+      link.classList.add('current')
+    }
+  })
 
   const changeStyle = document.querySelector('.change-style')
   changeStyle.addEventListener('click', e => {
