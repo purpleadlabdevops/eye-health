@@ -3,7 +3,6 @@
 function formContacts(){
 
   $to = 'onyx18121990@gmail.com';
-  $from = 'max.globa.1990@ya.ru';
 
   $subject = 'Eye health Contact us form';
 
@@ -13,8 +12,8 @@ function formContacts(){
     <p>Message: '.$_POST['msg'].'</p>
   ';
 
-  $headers =  'From: '. $from . "\r\n" .
-              'Reply-To: ' . $_POST['email'] . "\r\n";
+  $headers =  'Reply-To: ' . $_POST['email'] . "\r\n" .
+              'Content-Type: text/html; charset=UTF-8';
 
   $send_email = wp_mail( $to, $subject, $message, $headers);
 
