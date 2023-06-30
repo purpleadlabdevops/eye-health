@@ -13,7 +13,7 @@ function formApply(){
   ';
 
   // $attachments = array($_POST['attached_cv']);
-  $attachments = array(ROOT . '/uploads/test.pdf');
+  $attachments = array('http://theeyehealthgroup.com/wp-content/themes/mg-theme/uploads/test.pdf');
 
   $headers =  'Reply-To: ' . $_POST['email'] . "\r\n" .
               'Content-Type: text/html; charset=UTF-8';
