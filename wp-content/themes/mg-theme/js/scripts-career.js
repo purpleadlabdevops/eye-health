@@ -119,6 +119,7 @@ function requestAction(values, callback){
       position: document.getElementById('position').value,
       attached_cv: document.getElementById('attached_cv').value,
     }]
+    console.log(document.getElementById('attached_cv').value)
     requestAction(requestCheckout, result => {
       let data = JSON.parse(result)
       if(data.status == 'success'){

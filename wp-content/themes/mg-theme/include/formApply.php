@@ -29,7 +29,8 @@ function formApply(){
     $response = [
       'status' => 'error',
       'msg' => 'Oops, Error! Something went wrong, please reload page and try againe.',
-      'data' => json_encode($send_email)
+      'data' => json_encode($send_email),
+      'atm' => json_encode($attachments),
     ];
   }
 
