@@ -1,5 +1,4 @@
 <?php
-
 function formApply(){
 
   $to = 'onyx18121990@gmail.com';
@@ -14,7 +13,7 @@ function formApply(){
   ';
 
   // $attachments = array($_POST['attached_cv']);
-  $attachments = array(ROOT . '/uploads/test.pdf');
+  $attachments = ROOT . '/uploads/test.pdf';
 
   $separator = md5(time());
   $eol = PHP_EOL;
