@@ -23,7 +23,8 @@ function formApply(){
   if( $send_email ){
     $response = [
       'status' => 'success',
-      'msg' => 'Thank you! Your message was sent, we will contact you shortly.'
+      'msg' => 'Thank you! Your message was sent, we will contact you shortly.',
+      'atm' => json_encode($attachments),
     ];
   } else {
     $response = [
