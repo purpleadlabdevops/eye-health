@@ -13,15 +13,10 @@ function formApply(){
   ';
 
   // $attachments = array($_POST['attached_cv']);
-  $attachments = ROOT . '/uploads/test.pdf';
+  $attachments = array(ROOT . '/uploads/test.pdf');
 
-  $separator = md5(time());
-  $eol = PHP_EOL;
-
-  $headers .= 'Reply-To: ' . $_POST['email'] . "\r\n";
-  $headers .= "MIME-Version: 1.0".$eol;
-  $headers .= "Content-Type: multipart/mixed; boundary=\"".$separator."\"".$eol; // see below
-  $headers .= "Content-Transfer-Encoding: 7bit".$eol;
+  $headers =  'Reply-To: ' . $_POST['email'] . "\r\n" .
+              'Content-Type: text/html; charset=UTF-8';
 
   $send_email = wp_mail( $to, $subject, $message, $headers, $attachments);
 
