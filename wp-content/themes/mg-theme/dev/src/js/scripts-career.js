@@ -21,6 +21,7 @@
       let data = JSON.parse(result)
       if(data.status == 'success'){
         alert(data.msg)
+        console.dir(data);
         e.target.reset()
       } else if(data.status == 'error'){
         alert(data.msg)
