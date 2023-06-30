@@ -3,7 +3,7 @@
 function formContacts(){
 
   $to = 'onyx18121990@gmail.com';
-  $from = 'max.globa.1990@ya.ru';
+  $from = 'support@geekex.com';
 
   $subject = 'Eye health Contact us form';
 
