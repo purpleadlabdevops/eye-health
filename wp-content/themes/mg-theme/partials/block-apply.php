@@ -1,3 +1,10 @@
+<?php
+  $args = array(
+    'post_type' => 'cpt_hiring',
+    'posts_per_page' => -1
+  );
+  $the_query = new WP_Query( $args );
+?>
 <section class="form">
   <div class="container">
     <div class="form__wrap">
@@ -8,11 +15,9 @@
           <div class="field">
             <select name="position" id="position" placeholder="POSITION" required>
               <option selected disabled>CHOOSE POSITION</option>
-              <?php if( have_rows('hiring_list') ): ?>
-              <?php while( have_rows('hiring_list') ) : the_row(); ?>
-                <option value="<?php the_sub_field('title'); ?>"><?php the_sub_field('title'); ?></option>
+              <?php while ( $the_query->have_posts() ) : $the_query->the_post(); ?>
+                <option value="<?php the_title(); ?>"><?php the_title(); ?></option>
               <?php endwhile; ?>
-              <?php endif; ?>
             </select>
           </div>
           <div class="field">
