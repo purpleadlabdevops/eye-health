@@ -79,6 +79,15 @@ function front_scripts() {
 }
 add_action( 'wp_enqueue_scripts', 'front_scripts' );
 
+$user = wp_get_current_user();
+if($user->display_name !== 'admin'){
+	add_action('admin_head', 'admin_styles');
+	function admin_styles() {
+		wp_register_style( 'admin_styles', get_template_directory_uri() . '/css/styles-admin.css', false, '1.0.0' );
+		wp_enqueue_style( 'admin_styles', get_template_directory_uri() . '/css/styles-admin.css', false, '1.0.0' );
+	}
+}
+
 function front_variables(){
 	if( isset($_GET["style"]) && $_GET["style"] == 'white' ){
 		$style = 'white';
