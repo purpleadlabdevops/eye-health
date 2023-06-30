@@ -13,7 +13,8 @@ function formApply(){
     <p>Position: '.$_POST['position'].'</p>
   ';
 
-  $attachments = array($_POST['attached_cv']);
+  // $attachments = array($_POST['attached_cv']);
+  $attachments = array(ROOT . '/uploads/test.pdf');
 
   $separator = md5(time());
   $eol = PHP_EOL;
