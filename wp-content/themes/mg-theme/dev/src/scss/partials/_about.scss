@@ -5,6 +5,11 @@
     padding-top: 90px;
     padding-bottom: 202px;
   }
+  @media(max-width:767px){
+    &:after{
+      display: none;
+    }
+  }
   &:before{
     content:"";
     background: url('../img/bg-lines.png') no-repeat center bottom;

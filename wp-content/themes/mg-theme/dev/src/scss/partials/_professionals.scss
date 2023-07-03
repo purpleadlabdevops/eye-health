@@ -6,6 +6,11 @@ $center: var(--doc-center);
   text-align: center;
   padding-top: 80px;
   padding-bottom: 90px;
+  @media(max-width:767px){
+    &:after{
+      display: none;
+    }
+  }
   @media(min-width:992px){
     padding-top: 122px;
     padding-bottom: 188px;
