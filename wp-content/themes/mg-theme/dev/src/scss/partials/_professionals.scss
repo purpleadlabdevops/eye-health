@@ -6,6 +6,7 @@ $center: var(--doc-center);
   text-align: center;
   padding-top: 80px;
   padding-bottom: 90px;
+  overflow-x: hidden;
   @media(max-width:767px){
     &:after{
       display: none;
