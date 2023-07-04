@@ -180,10 +180,6 @@ if ( ! class_exists( 'acf_field_relationship' ) ) :
 
 				$args['post_status'] = acf_get_array( $field['post_status'] );
 
-			} else {
-
-				$args['post_status'] = acf_get_post_stati();
-
 			}
 
 			// taxonomy
@@ -609,7 +605,7 @@ if ( ! class_exists( 'acf_field_relationship' ) ) :
 					'multiple'     => 1,
 					'ui'           => 1,
 					'allow_null'   => 1,
-					'placeholder'  => __( 'Published', 'acf' ),
+					'placeholder'  => __( 'Any post status', 'acf' ),
 				)
 			);
 
@@ -674,7 +670,7 @@ if ( ! class_exists( 'acf_field_relationship' ) ) :
 			acf_render_field_setting(
 				$field,
 				array(
-					'label'        => __( 'Minimum posts', 'acf' ),
+					'label'        => __( 'Minimum Posts', 'acf' ),
 					'instructions' => '',
 					'type'         => 'number',
 					'name'         => 'min',
@@ -684,7 +680,7 @@ if ( ! class_exists( 'acf_field_relationship' ) ) :
 			acf_render_field_setting(
 				$field,
 				array(
-					'label'        => __( 'Maximum posts', 'acf' ),
+					'label'        => __( 'Maximum Posts', 'acf' ),
 					'instructions' => '',
 					'type'         => 'number',
 					'name'         => 'max',

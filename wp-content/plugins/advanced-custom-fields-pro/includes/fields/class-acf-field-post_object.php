@@ -146,10 +146,6 @@ if ( ! class_exists( 'acf_field_post_object' ) ) :
 
 				$args['post_status'] = acf_get_array( $field['post_status'] );
 
-			} else {
-
-				$args['post_status'] = 'publish';
-
 			}
 
 			// taxonomy
@@ -397,7 +393,7 @@ if ( ! class_exists( 'acf_field_post_object' ) ) :
 					'multiple'     => 1,
 					'ui'           => 1,
 					'allow_null'   => 1,
-					'placeholder'  => __( 'Published', 'acf' ),
+					'placeholder'  => __( 'Any post status', 'acf' ),
 				)
 			);
 
@@ -434,8 +430,8 @@ if ( ! class_exists( 'acf_field_post_object' ) ) :
 			acf_render_field_setting(
 				$field,
 				array(
-					'label'        => __( 'Select multiple values?', 'acf' ),
-					'instructions' => '',
+					'label'        => __( 'Select Multiple', 'acf' ),
+					'instructions' => 'Allow content editors to select multiple values',
 					'name'         => 'multiple',
 					'type'         => 'true_false',
 					'ui'           => 1,
@@ -456,7 +452,7 @@ if ( ! class_exists( 'acf_field_post_object' ) ) :
 			acf_render_field_setting(
 				$field,
 				array(
-					'label'        => __( 'Allow Null?', 'acf' ),
+					'label'        => __( 'Allow Null', 'acf' ),
 					'instructions' => '',
 					'name'         => 'allow_null',
 					'type'         => 'true_false',
