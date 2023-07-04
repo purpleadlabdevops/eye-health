@@ -2,6 +2,7 @@
 //= partials/ajaxRequest.js
 //= partials/eye.js
 //= partials/bookAnAppointment.js
+//= partials/waiting.js
 
 (function(){
 
