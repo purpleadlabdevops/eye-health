@@ -48,7 +48,6 @@ var tns=function(){Object.keys||(Object.keys=function(t){var e=[];for(var n in t
   const waitingItems = document.querySelectorAll('.waiting__item'),
         waitingAreas = document.querySelectorAll('.waiting__area'),
         waitingActives = document.querySelectorAll('.waiting__active'),
-        waitingDefaults = document.querySelectorAll('.waiting__default'),
         nyStates = document.querySelectorAll('.ny_states')
   waitingItems.forEach(item => {
     item.addEventListener('click', e => {

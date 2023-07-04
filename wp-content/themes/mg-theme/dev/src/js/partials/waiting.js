@@ -3,7 +3,6 @@
   const waitingItems = document.querySelectorAll('.waiting__item'),
         waitingAreas = document.querySelectorAll('.waiting__area'),
         waitingActives = document.querySelectorAll('.waiting__active'),
-        waitingDefaults = document.querySelectorAll('.waiting__default'),
         nyStates = document.querySelectorAll('.ny_states')
   waitingItems.forEach(item => {
     item.addEventListener('click', e => {
