@@ -5,6 +5,9 @@
     padding-top: 110px;
     padding-bottom: 64px;
   }
+  &:after{
+    display: none;
+  }
   h2{
     margin-bottom: 32px;
   }
@@ -44,14 +47,11 @@
     }
   }
   &__left, &__right{
-    width: 100%;
-    @media(min-width:992px){
-      width: 50%;
-    }
   }
   &__left{
     @media(min-width:992px){
       padding-right: 15px;
+      width: 35%;
     }
   }
   &__right{
@@ -59,11 +59,20 @@
     @media(max-width:991px){
       display: none;
     }
+    @media(min-width:992px){
+      width: 65%;
+    }
+  }
+  &__map{
+    background: url('../img/map-lines.png') no-repeat center top/100% auto;
+    position: sticky;
+    top: 60px;
     svg{
-      width: 100%;
+      max-width: 100%;
       height: auto;
-      position: sticky;
-      top: 60px;
+      display: block;
+      margin-left: auto;
+      margin-right: auto;
     }
   }
   .ny_states{
@@ -73,5 +82,36 @@
   }
   .word{
     fill: var(--text-color);
+  }
+  &__default{}
+  &__active{
+    display: none;
+    &.active{
+      display: block;
+    }
+  }
+  &__area{
+    &.active{
+      fill: #C1D7BB;
+    }
+  }
+  &__tab-nav{
+    display: flex;
+    button{
+      background: none;
+      border: none;
+      border-bottom: 2px dashed #E7E7DE;
+      font-size: clamp(16px, cqi(24), 24px);
+      font-family: MADE TOMMY;
+      font-style: normal;
+      font-weight: 400;
+      line-height: 110%;
+      text-transform: uppercase;
+      padding: 8px 24px;
+      &.active{
+        border-bottom: 3px solid #9C9E99;
+        color: #221B19;
+      }
+    }
   }
 }
