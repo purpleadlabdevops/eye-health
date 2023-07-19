@@ -18,7 +18,7 @@
 					<a class="link-page" href="<?php the_permalink(get_sub_field('id')); ?>"><?php the_sub_field('name'); ?></a>
 				<?php endwhile; ?>
 			<?php endif; ?>
-			<a class="btn btn-light" href="#">Payment</a>
+			<a class="btn btn-light" href="<?php the_field('payment', 'option'); ?>">Payment</a>
 			<a class="btn btn-dark book-an-appointment" href="<?php the_field('book_an_appointment', 'option'); ?>">Book an appointment</a>
 		</nav>
 	</div>

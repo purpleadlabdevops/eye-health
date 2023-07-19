@@ -221,6 +221,11 @@
       left: -30px;
       top: 0;
       font-size: 150px;
+      height: 100%;
+    }
+    span {
+      position: sticky;
+      top: 100px;
     }
   }
 }

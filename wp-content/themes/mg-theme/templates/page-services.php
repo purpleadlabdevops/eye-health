@@ -70,7 +70,9 @@ get_header(); ?>
       <div class="story__right">
         <?php while( have_rows('story_list') ) : the_row(); ?>
         <div class="story__item">
-          <div class="story__num"><?php the_sub_field('year'); ?></div>
+          <div class="story__num">
+            <span><?php the_sub_field('year'); ?></span>
+          </div>
           <p class="txt-20 txt-medium txt-uppercase"><?php the_sub_field('title'); ?></p>
           <p class="txt-20"><?php the_sub_field('text'); ?></p>
           <?php if(get_sub_field('img')): ?>

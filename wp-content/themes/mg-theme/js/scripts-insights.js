@@ -48,7 +48,7 @@
         links = document.querySelectorAll('.link-page'),
         eyeOpening = () => {
           eye.classList.add('eye__opening')
-          setTimeout(() => eyeOpened(), 500)
+          setTimeout(() => eyeOpened(), 250)
         },
         eyeOpened = () => {
           eye.classList.remove('eye__opening')
@@ -56,10 +56,10 @@
         },
         eyeClose = url => {
           eye.classList.remove('eye__opened')
-          setTimeout(() => location.href = url+window.location.search, 500)
+          setTimeout(() => location.href = url+window.location.search, 250)
         }
 
-  setTimeout(() => eyeOpening(), 100)
+  setTimeout(() => eyeOpening(), 50)
   links.forEach(link => {
     link.addEventListener('click', e => {
       e.preventDefault()
