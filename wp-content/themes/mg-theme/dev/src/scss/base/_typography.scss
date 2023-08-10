@@ -60,31 +60,26 @@ a{
 ul.list{
   padding-left: 2em;
   margin-top: 10px;
+  ul.list{
+    padding-left: 2em;
+    margin-top: 10px;
+  }
   li{
     list-style: disc;
     &:not(:first-child){
       margin-top: 10px;
     }
   }
+  &-letter{
+    list-style-type: lower-alpha;
+  }
+  &-num{
+    list-style-type: decimal;
+  }
 }
 
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
+.page__content{
+  .txt-20{
+    margin-bottom: 15px;
+  }
+}
