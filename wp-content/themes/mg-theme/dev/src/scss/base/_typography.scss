@@ -72,12 +72,12 @@ ul.list{
     }
   }
   &-letter{
-    li{
+    & > li{
       list-style: lower-alpha;
     }
   }
   &-num{
-    li{
+    & > li{
       list-style: decimal;
     }
   }

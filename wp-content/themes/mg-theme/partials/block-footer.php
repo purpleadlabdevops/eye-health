@@ -44,7 +44,7 @@
       </div>
       <div class="main-footer__bottom">
         <a class="link-page" href="<?php the_permalink(18); ?>">Privacy policy</a>
-        <a class="link-page" href="<?php the_permalink(20); ?>">Terms and conditions</a>
+        <a class="link-page" href="<?php the_permalink(20); ?>">Terms of use</a>
         <span>the eye health group 2023. All rights reserved.</span>
       </div>
     </div>
