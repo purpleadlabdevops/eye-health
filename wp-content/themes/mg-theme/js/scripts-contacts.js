@@ -113,7 +113,7 @@ function requestAction(values, callback){
         nyStates = document.querySelectorAll('.ny_states')
   waitingItems.forEach(item => {
     item.addEventListener('click', e => {
-      e.preventDefault();
+      // e.preventDefault();
       waitingItems.forEach(el => el.classList.remove('active'))
       waitingAreas.forEach(el => el.classList.remove('active'))
       waitingActives.forEach(el => el.classList.remove('active'))

@@ -51,7 +51,7 @@ var tns=function(){Object.keys||(Object.keys=function(t){var e=[];for(var n in t
         nyStates = document.querySelectorAll('.ny_states')
   waitingItems.forEach(item => {
     item.addEventListener('click', e => {
-      e.preventDefault();
+      // e.preventDefault();
       waitingItems.forEach(el => el.classList.remove('active'))
       waitingAreas.forEach(el => el.classList.remove('active'))
       waitingActives.forEach(el => el.classList.remove('active'))
