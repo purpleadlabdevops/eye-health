@@ -71,10 +71,14 @@ ul.list{
     }
   }
   &-letter{
-    list-style-type: lower-alpha;
+    li{
+      list-style: lower-alpha;
+    }
   }
   &-num{
-    list-style-type: decimal;
+    li{
+      list-style: decimal;
+    }
   }
 }
 
