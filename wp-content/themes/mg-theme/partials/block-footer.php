@@ -43,8 +43,13 @@
         </div>
       </div>
       <div class="main-footer__bottom">
-        <a class="link-page" href="<?php the_permalink(18); ?>">Privacy policy</a>
-        <a class="link-page" href="<?php the_permalink(20); ?>">Terms of use</a>
+        <div class="main-footer__bottom__menu">
+          <a class="link-page" href="<?php the_permalink(18); ?>">Privacy policy</a>
+          <a class="link-page" href="<?php the_permalink(20); ?>">Terms of use</a>
+          <a class="link-page" href="<?php the_permalink(423); ?>">COOKIE POLICY</a>
+          <a class="link-page" href="<?php the_permalink(427); ?>">COMMUNICATION POLICY</a>
+          <a class="link-page" href="<?php the_permalink(425); ?>">NOTICE OF PRIVACY PRACTICES</a>
+        </div>
         <span>the eye health group 2023. All rights reserved.</span>
       </div>
     </div>

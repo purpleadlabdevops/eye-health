@@ -30,6 +30,9 @@
     text-transform: uppercase;
     color: #D8D8C9;
     text-decoration: none;
+    &:hover{
+      opacity: .7;
+    }
   }
   &__row{
     padding-bottom: 50px;
@@ -107,6 +110,23 @@
       @media(max-width:767px){
         display: block;
         margin-bottom: 10px;
+      }
+    }
+    &__menu{
+      a{
+        @media(max-width:991px){
+          display: block;
+          &:not(:first-child){
+            margin-top: 10px;
+          }
+        }
+        @media(min-width:992px){
+          &:not(:first-child){
+            border-left: 1px solid var(--footer-title-color);
+            margin-left: 5px;
+            padding-left: 5px;
+          }
+        }
       }
     }
   }
