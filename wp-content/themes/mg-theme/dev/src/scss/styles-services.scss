@@ -47,7 +47,7 @@
     @media(min-width:992px){
       display: flex;
       justify-content: space-between;
-      align-items: center;
+      flex-wrap: wrap;
     }
   }
   &__item{
@@ -57,7 +57,7 @@
     align-items: center;
     justify-content: flex-start;
     font-weight: 400;
-    font-size: 20px;
+    font-size: 15px;
     line-height: 140%;
     text-transform: uppercase;
     color: #221B19;
@@ -67,16 +67,23 @@
       }
     }
     @media(min-width:992px){
+      width: calc(100% / 2 - 15px);
+      margin-top: 10px;
+      margin-bottom: 10px;
+    }
+    @media(min-width:1200px){
       width: calc(100% / 4 - 90px / 4);
+      margin-top: 0px;
+      margin-bottom: 0px;
     }
     b{
       font-family: 'Founders Grotesk', sans-serif;
       font-weight: 500;
-      font-size: 50px;
+      font-size: 40px;
       line-height: 100%;
       text-transform: uppercase;
-      margin-right: 16px;
-      margin-bottom: -20px;
+      margin-right: 10px;
+      margin-bottom: -15px;
     }
   }
 }
