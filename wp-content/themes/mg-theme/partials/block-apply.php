@@ -12,7 +12,7 @@
       <div class="row">
         <img src="<?php echo IMG; ?>/apply.jpg" class="col__order-2">
         <div class="form__inner">
-          <?php echo do_shortcode('[contact-form-7 id="427d17a"]'); ?>
+          <?php echo do_shortcode('[contact-form-7 id="240a385" title="Hiring"]'); ?>
         </div>
         <!-- <form class="form__apply" enctype="multipart/form-data" >
           <div class="field">
