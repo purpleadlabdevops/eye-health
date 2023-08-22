@@ -21,7 +21,8 @@ get_header(); ?>
       <h2>contact <b>us!</b></h2>
       <div class="row">
         <img src="<?php echo IMG; ?>/contact-form.jpg">
-        <form class="form__contact-us" action="/" >
+        <div class="form__inner"><?php echo do_shortcode('[contact-form-7 id="e5f24d2"]'); ?></div>
+        <!-- <form class="form__inner" action="/" >
           <div class="field">
             <input type="text" id="full_name" name="full_name" placeholder="FULL NAME" required>
           </div>
@@ -34,7 +35,7 @@ get_header(); ?>
           <div class="field">
             <input type="submit" value="submit">
           </div>
-        </form>
+        </form> -->
       </div>
     </div>
   </div>

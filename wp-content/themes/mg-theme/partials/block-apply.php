@@ -11,7 +11,10 @@
       <h2>APPLY <b>NOW!</b></h2>
       <div class="row">
         <img src="<?php echo IMG; ?>/apply.jpg" class="col__order-2">
-        <form class="form__apply" enctype="multipart/form-data" >
+        <div class="form__inner">
+          <?php echo do_shortcode('[contact-form-7 id="427d17a"]'); ?>
+        </div>
+        <!-- <form class="form__apply" enctype="multipart/form-data" >
           <div class="field">
             <select name="position" id="position" placeholder="POSITION" required>
               <option selected disabled>CHOOSE POSITION</option>
@@ -36,7 +39,7 @@
           <div class="field">
             <input type="submit" value="submit">
           </div>
-        </form>
+        </form> -->
       </div>
     </div>
   </div>

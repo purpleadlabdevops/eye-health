@@ -28,11 +28,21 @@
       width: calc(50% - 20px);
     }
   }
-  form{
+  &__inner{
     @media(min-width:992px){
       width: calc(50% - 20px);
       margin-top: -20px;
     }
+  }
+  .wpcf7-not-valid-tip {
+    position: absolute;
+    font-size: 11px;
+  }
+  .wpcf7 form .wpcf7-response-output {
+    font-size: 11px;
+    padding: 10px 15px;
+    margin: 0;
+    width: 100%;
   }
 }
 
