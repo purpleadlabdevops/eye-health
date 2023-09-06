@@ -65,6 +65,18 @@ get_header(); ?>
     <h2><?php the_field('story_title'); ?></h2>
     <div class="story__row">
       <div class="story__left">
+        <div class="story__year" style="padding-right: 140px;">19</div>
+      </div>
+      <div class="story__right">
+        <div class="story__item">
+          <div class="story__num">
+            <span>91</span>
+          </div>
+        </div>
+      </div>
+    </div>
+    <div class="story__row">
+      <div class="story__left">
         <div class="story__year">20</div>
       </div>
       <div class="story__right">
