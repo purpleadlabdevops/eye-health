@@ -72,6 +72,8 @@ get_header(); ?>
           <div class="story__num">
             <span>91</span>
           </div>
+          <p class="txt-20 txt-medium txt-uppercase">The Beginning</p>
+          <p class="txt-20">In the landmark year of 1991, the birth of what would become TEHG began with the unveiling of the very first location in Toms River, New Jersey</p>
         </div>
       </div>
     </div>
